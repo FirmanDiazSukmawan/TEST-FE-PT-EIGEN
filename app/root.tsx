@@ -42,7 +42,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return ( 
+  <div className="bg-[#f7f7f7]">
+  <Outlet />
+  </div>)
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
